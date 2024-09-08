@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sunil Thapa Resume</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunil Thapa Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
 <body>
     <div class="container">
         <div class="main-content">
             <h1>SUNIL THAPA</h1>
-            <p class="contact-info">
-                <span class="contact-item"><i class="fas fa-phone"></i> +9779846214043</span>
-                <span class="contact-item"><i class="fas fa-envelope"></i> tsunil359@gmail.com</span>
-                <span class="contact-item"><i class="fas fa-map-marker-alt"></i> Pokhara</span>
-            </p>
+            <div class="contact-info">
+                <div class="contact-item"><i class="fas fa-phone"></i> +9779846214043</div>
+                <div class="contact-item"><i class="fas fa-envelope"></i> tsunil359@gmail.com</div>
+                <div class="contact-item"><i class="fas fa-map-marker-alt"></i> Pokhara</div>
+            </div>
 
             <h2>SUMMARY</h2>
             <p>
@@ -26,12 +26,10 @@
             <h2>EXPERIENCE</h2>
             <div class="experience-item">
                 <div class="experience-header">
-                    <div>
-                        <h3>Software Engineer, Ideapreneur Nepal</h3>
-                        <p>Kupondole, Lalitpur</p>
-                    </div>
+                    <h3>Software Engineer, Ideapreneur Nepal</h3>
                     <div class="experience-details">
                         <p>10/2022 - 01/2024</p>
+                        <p>Kupondole, Lalitpur</p>
                     </div>
                 </div>
                 <ul>
@@ -49,84 +47,103 @@
 
             <div class="experience-item">
                 <div class="experience-header">
-                    <div>
-                        <h3>Backend Developer, Himalaya Green</h3>
-                        <p>Remote</p>
-                    </div>
+                    <h3>Backend Developer, Himalaya Green</h3>
                     <div class="experience-details">
                         <p>03/2022 - 07/2022</p>
+                        <p>Remote</p>
                     </div>
                 </div>
                 <ul>
                     <li>Developed APIs and backend systems for sustainability projects.</li>
                     <li>Participated in code reviews and debugging.</li>
                     <li>Gained valuable insights into real-world development projects and work culture.</li>
-                    <li>Learned the software development essentials like architecture, version control systems, relational databases, deployment and servers</li>
-                    <li>Gained valuable insights into real-world development projects and work culture, further enhancing technical skills and industry knowledge.</li>
+                    <li>Learned the software development essentials like architecture, version control systems, relational databases, deployment and servers.</li>
                 </ul>
             </div>
 
             <h2>EDUCATION</h2>
-            <h3>Bachelor’s in Software Engineering</h3>
-            <p>Gandaki College of Engineering and Science, Pokhara University</p>
-            <p>2017 - 2024</p>
+            <div class="education-item">
+                <h3>BE in Software Engineering | Gandaki College Of Engineering and Science</h3>
+                <p>11/2017 - 08/2022 | Lamachaur, Nepal</p>
+                <ul>
+                    <li>Awarded with Pokhara University Merit Scholarship</li>
+                </ul>
+            </div>
+
+            <div class="education-item">
+                <h3>HSEB | Sainik Awasiya Mahavidyalaya</h3>
+                <p>04/2015 - 08/2017 | Pokhara, Nepal</p>
+            </div>
+
+            <div class="education-item">
+                <h3>Secondary Level | Shree Gogan Higher Secondary</h3>
+                <p>2015 | Lekhnath, Pokhara</p>
+            </div>
         </div>
 
         <div class="sidebar">
+            <div class="find-me">
+                <h2>Find Me</h2>
+                <div class="contact-item"><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></div>
+                <div class="contact-item"><i class="fab fa-github"></i> <a href="https://github.com/yourusername" target="_blank">GitHub</a></div>
+            </div>
+
+            <div class="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li>
+                        <span class="project-title">Wishster - Make a wish</span><br>
+                        <span class="project-details">03/2024 - 06/2024 | Remote (Australia)</span>
+                        <div class="project-description">
+                            Backend and System Deployment<br>
+                            I was responsible for handling all the backend and system deployment roles for the Wishster freelance project.
+                        </div>
+                    </li>
+                    <li>
+                        <span class="project-title">Himali Green</span><br>
+                        <span class="project-details">03/2022 - 07/2022 | Remote</span>
+                        <div class="project-description">
+                            Backend and API Development<br>
+                            I handled the API development and deployment parts for this ecommerce-like web and mobile application. <a href="#" target="_blank">Visit Here</a>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="project-title">RentAssist</span><br>
+                        <span class="project-details">Final Year Project</span>
+                        <div class="project-description">
+                            System, Backend, DevOps<br>
+                            Rent management system with OCR technology for electricity meter reading, which includes separate apps for owners and tenants.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
             <div class="skills-section">
-                <h2>SKILLS</h2>
+                <h2>Skills</h2>
                 <div class="skill">
-                    <p><strong>Python</strong></p>
+                    <span>REST API Development</span>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;">90%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Relational Databases</span>
                     <div class="progress">
                         <div class="progress-bar" style="width: 85%;">85%</div>
                     </div>
                 </div>
                 <div class="skill">
-                    <p><strong>Django</strong></p>
+                    <span>Object-Oriented Programming</span>
                     <div class="progress">
                         <div class="progress-bar" style="width: 80%;">80%</div>
                     </div>
                 </div>
                 <div class="skill">
-                    <p><strong>Java</strong></p>
+                    <span>System Deployment and Maintenance</span>
                     <div class="progress">
                         <div class="progress-bar" style="width: 75%;">75%</div>
                     </div>
                 </div>
-                <div class="skill">
-                    <p><strong>C++</strong></p>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 70%;">70%</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="projects">
-                <h2>PROJECTS</h2>
-                <ul>
-                    <li>
-                        <div class="project-title">Wishster - Make a Wish</div>
-                        <div class="project-details">03/2024 - 06/2024 | Remote (Australia)</div>
-                        <div class="project-description">
-                            I was responsible for handling all the backend and system deployment roles for the Wishster freelance project.
-                        </div>
-                    </li>
-                    <li>
-                        <div class="project-title">Himali Green</div>
-                        <div class="project-details">03/2022 - 07/2022 | Remote</div>
-                        <div class="project-description">
-                            I handled the API development and deployment parts for this ecommerce-like web and mobile application.
-                            <a href="#">Visit Here</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="project-title">RentAssist</div>
-                        <div class="project-details">Final Year Project</div>
-                        <div class="project-description">
-                            A rent management system with OCR technology for electricity meter reading, including separate apps for owners and tenants.
-                        </div>
-                    </li>
-                </ul>
             </div>
         </div>
     </div>
