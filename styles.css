@@ -25,7 +25,7 @@ body {
 
 .sidebar {
     flex: 1;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(230, 230, 230); /* Sidebar background color */
     padding: 20px;
     border-radius: 8px;
 }
@@ -77,41 +77,33 @@ p, ul {
 
 ul {
     list-style-type: disc;
-    margin-left: 20px;
+    padding-left: 20px;
 }
 
-ul li {
-    margin-bottom: 10px;
-}
-
-.skills-section, .projects {
-    background-color: #ecf0f1;
-    padding: 20px;
-    border-radius: 8px;
+.experience-item {
     margin-bottom: 20px;
 }
 
-.skills-section h2, .projects h2 {
-    border-bottom: none;
-    padding-bottom: 0;
-}
-
-.progress {
-    background-color: #f4f4f4;
-    border-radius: 5px;
-    overflow: hidden;
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 10px;
 }
 
-.progress-bar {
-    height: 20px;
-    background-color: #2c3e50;
-    width: 0;
-    text-align: center;
-    line-height: 20px;
-    color: #fff;
-    border-radius: 5px;
-    transition: width 0.5s;
+.position {
+    font-size: 18px;
+    color: #2980b9;
+}
+
+.experience-details {
+    color: #777;
+}
+
+.company-location {
+    display: flex;
+    justify-content: space-between;
+    color: #777;
 }
 
 .projects ul {
@@ -148,30 +140,35 @@ ul li {
     text-decoration: underline;
 }
 
-.experience-item {
+.skills-section {
     margin-bottom: 20px;
 }
 
-.experience-header {
-    display: flex;
-    justify-content: space-between;
+.skills-section h2 {
+    border-bottom: none;
+    padding-bottom: 0;
 }
 
-.experience-details {
-    text-align: right;
-    color: #777;
-}
-
-.education-item {
+.skill {
     margin-bottom: 20px;
 }
 
-.education-item h3 {
-    color: #2c3e50;
+.progress {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
 }
 
-.education-item p {
-    color: #777;
+.progress-bar {
+    height: 20px;
+    background-color: #2c3e50;
+    width: 0;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    border-radius: 5px;
+    transition: width 0.5s;
 }
 
 .find-me {
