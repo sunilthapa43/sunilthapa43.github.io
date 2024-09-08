@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sunil Thapa Resume</title>
     <style>
+        /* Existing CSS */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -14,37 +15,48 @@
             color: #333;
         }
         .container {
-            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px; /* Adds space between the main content and sidebar */
+            width: 90%;
+            max-width: 1000px;
             margin: 40px auto;
-            background: #fff;
-            padding: 40px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .main-content {
+            flex: 2;
+            padding-right: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
         }
         h1 {
-            font-size: 32px;
+            font-size: 36px;
             color: #2c3e50;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
         }
         .contact-info {
-            font-size: 14px;
+            font-size: 16px;
             color: #777;
             margin-bottom: 30px;
         }
         h2 {
-            font-size: 20px;
+            font-size: 24px;
             color: #2c3e50;
             border-bottom: 2px solid #2c3e50;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
         }
         h3 {
-            font-size: 18px;
+            font-size: 20px;
             color: #2c3e50;
-            margin-top: 25px;
-            margin-bottom: 5px;
+            margin-top: 20px;
+            margin-bottom: 10px;
         }
         p, ul {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
         ul {
             list-style-type: disc;
@@ -56,76 +68,128 @@
         .skills-section {
             background-color: #ecf0f1;
             padding: 20px;
-            margin-top: 40px;
+            border-radius: 8px;
         }
         .skills-section h2 {
             border-bottom: none;
             padding-bottom: 0;
         }
+        .progress {
+            background-color: #f4f4f4;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+        .progress-bar {
+            height: 20px;
+            background-color: #2c3e50;
+            width: 0;
+            text-align: center;
+            line-height: 20px;
+            color: #fff;
+            border-radius: 5px;
+            transition: width 0.5s;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>SUNIL THAPA</h1>
-        <p class="contact-info">
-            Software Engineer<br>
-            +9779846214043 | tsunil359@gmail.com | Pokhara
-        </p>
+        <div class="main-content">
+            <h1>SUNIL THAPA</h1>
+            <p class="contact-info">
+                Software Engineer<br>
+                +9779846214043 | tsunil359@gmail.com | Pokhara
+            </p>
 
-        <h2>SUMMARY</h2>
-        <p>
-            Software Engineer specializing in backend development and API design. Motivated and eager to take on new challenges. 
-            I can maintain good communication with the team and stakeholders to bring ideas into reality.
-        </p>
+            <h2>SUMMARY</h2>
+            <p>
+                Software Engineer specializing in backend development and API design. Motivated and eager to take on new challenges. 
+                I can maintain good communication with the team and stakeholders to bring ideas into reality.
+            </p>
 
-        <h2>EXPERIENCE</h2>
-        <h3>Software Engineer, Ideapreneur Nepal | 10/2022 - 01/2024</h3>
-        <p>Kupondole, Lalitpur</p>
-        <ul>
-            <li>Developed and maintained backend systems and RESTful APIs.</li>
-            <li>Remodeled and optimized relational database systems.</li>
-            <li>Code optimization and reviews to ensure system efficiency.</li>
-            <li>Implemented scalable architecture patterns and introduced a CI/CD system for automated deployment.</li>
-            <li>Collaborated with designers and stakeholders to create user-friendly and visually appealing website designs.</li>
-            <li>Worked alongside finance and legal experts to gather requirements and integrate their ideas into the system.</li>
-            <li>Performed data analysis, visualizations, and computations using pandas.</li>
-            <li>Mentored interns and junior developers, guiding them through debugging and issue resolution.</li>
-            <li>Implemented new features, enhancements, and fixes to meet evolving platform needs.</li>
-        </ul>
-
-        <h3>Backend Developer, Himalaya Green | 03/2022 - 07/2022</h3>
-        <p>Remote</p>
-        <ul>
-            <li>Developed APIs and backend systems for sustainability projects.</li>
-            <li>Participated in code reviews and debugging.</li>
-            <li>Gained valuable insights into real-world development projects and work culture.</li>
-            <li>Learned the software development essentials like architecture, version control
-                systems, relational databases, deployment and servers</li>
-            <li>Gained valuable insights into real-world development projects and work culture,
-                further enhancing technical skills and industry knowledge</li>
-        </ul>
-
-        <h2>EDUCATION</h2>
-        <h3>BE in Software Engineering | Gandaki College Of Engineering and Science | 11/2017 - 08/2022</h3>
-        <p>Lamachaur, Nepal</p>
-        <ul>
-            <li>Awarded with Pokhara University Merit Scholarship</li>
-        </ul>
-
-        <h3>HSEB | Sainik Awasiya Mahavidyalaya | 04/2015 - 08/2017</h3>
-        <p>Pokhara, Nepal</p>
-
-        <h3>Secondary Level | Shree Gogan Higher Secondary | 2015</h3>
-        <p>Lekhnath, Pokhara</p>
-
-        <div class="skills-section">
-            <h2>SKILLS</h2>
+            <h2>EXPERIENCE</h2>
+            <h3>Software Engineer, Ideapreneur Nepal | 10/2022 - 01/2024</h3>
+            <p>Kupondole, Lalitpur</p>
             <ul>
-                <li>Proficient in REST API Development</li>
-                <li>Proficient in Relational Databases</li>
-                <li>Proficient in Object-Oriented Programming</li>
-                <li>Advanced in System Deployment and Maintenance</li>
+                <li>Developed and maintained backend systems and RESTful APIs.</li>
+                <li>Remodeled and optimized relational database systems.</li>
+                <li>Code optimization and reviews to ensure system efficiency.</li>
+                <li>Implemented scalable architecture patterns and introduced a CI/CD system for automated deployment.</li>
+                <li>Collaborated with designers and stakeholders to create user-friendly and visually appealing website designs.</li>
+                <li>Worked alongside finance and legal experts to gather requirements and integrate their ideas into the system.</li>
+                <li>Performed data analysis, visualizations, and computations using pandas.</li>
+                <li>Mentored interns and junior developers, guiding them through debugging and issue resolution.</li>
+                <li>Implemented new features, enhancements, and fixes to meet evolving platform needs.</li>
             </ul>
+
+            <h3>Backend Developer, Himalaya Green | 03/2022 - 07/2022</h3>
+            <p>Remote</p>
+            <ul>
+                <li>Developed APIs and backend systems for sustainability projects.</li>
+                <li>Participated in code reviews and debugging.</li>
+                <li>Gained valuable insights into real-world development projects and work culture.</li>
+                <li>Learned the software development essentials like architecture, version control systems, relational databases, deployment and servers</li>
+                <li>Gained valuable insights into real-world development projects and work culture, further enhancing technical skills and industry knowledge</li>
+            </ul>
+
+            <h2>EDUCATION</h2>
+            <h3>BE in Software Engineering | Gandaki College Of Engineering and Science | 11/2017 - 08/2022</h3>
+            <p>Lamachaur, Nepal</p>
+            <ul>
+                <li>Awarded with Pokhara University Merit Scholarship</li>
+            </ul>
+
+            <h3>HSEB | Sainik Awasiya Mahavidyalaya | 04/2015 - 08/2017</h3>
+            <p>Pokhara, Nepal</p>
+
+            <h3>Secondary Level | Shree Gogan Higher Secondary | 2015</h3>
+            <p>Lekhnath, Pokhara</p>
+
+            <div class="skills-section">
+                <h2>SKILLS</h2>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 80%;">REST API Development</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 75%;">Relational Databases</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 70%;">Object-Oriented Programming</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 65%;">System Deployment and Maintenance</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <h2>FIND ME</h2>
+            <ul>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">Your LinkedIn Profile</a></li>
+                <li>GitHub: <a href="https://github.com/yourusername" target="_blank">Your GitHub Profile</a></li>
+                <li>Portfolio: <a href="https://yourportfolio.com" target="_blank">Your Portfolio</a></li>
+            </ul>
+
+            <h2>PROJECTS</h2>
+            <ul>
+                <li>Project 1: Description of project 1.</li>
+                <li>Project 2: Description of project 2.</li>
+                <li>Project 3: Description of project 3.</li>
+            </ul>
+
+            <h2>SKILLS</h2>
+            <div class="progress">
+                <div class="progress-bar" style="width: 80%;">REST API Development</div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar" style="width: 75%;">Relational Databases</div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar" style="width: 70%;">Object-Oriented Programming</div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar" style="width: 65%;">System Deployment and Maintenance</div>
+            </div>
         </div>
     </div>
 </body>
