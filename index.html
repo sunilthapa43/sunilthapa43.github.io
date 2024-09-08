@@ -6,170 +6,7 @@
     <title>Sunil Thapa Resume</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
-            width: 90%;
-            max-width: 1200px;
-            margin: 40px auto;
-        }
-        .main-content {
-            flex: 2;
-            padding-right: 20px;
-        }
-        .sidebar {
-            flex: 1;
-            background-color: #ecf0f1;
-            padding: 20px;
-            border-radius: 8px;
-        }
-        h1 {
-            font-size: 36px;
-            color: #2c3e50;
-            margin-bottom: 10px;
-        }
-        .contact-info {
-            font-size: 16px;
-            color: #777;
-            margin-bottom: 30px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px; /* Adjusts the spacing between items */
-        }
-        .contact-info i {
-            margin-right: 8px;
-            color: #2c3e50;
-        }
-        .contact-info .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 8px; /* Spacing between icon and text */
-        }
-        h2 {
-            font-size: 24px;
-            color: #2c3e50;
-            border-bottom: 2px solid #2c3e50;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-        h3 {
-            font-size: 20px;
-            color: #2c3e50;
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
-        p, ul {
-            margin-bottom: 20px;
-        }
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
-        }
-        ul li {
-            margin-bottom: 10px;
-        }
-        .skills-section {
-            background-color: #ecf0f1;
-            padding: 20px;
-            border-radius: 8px;
-        }
-        .skills-section h2 {
-            border-bottom: none;
-            padding-bottom: 0;
-        }
-        .progress {
-            background-color: #f4f4f4;
-            border-radius: 5px;
-            overflow: hidden;
-            margin-bottom: 10px;
-        }
-        .progress-bar {
-            height: 20px;
-            background-color: #2c3e50;
-            width: 0;
-            text-align: center;
-            line-height: 20px;
-            color: #fff;
-            border-radius: 5px;
-            transition: width 0.5s;
-        }
-        .projects ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .projects ul li {
-            margin-bottom: 20px;
-            border-left: 3px solid #2c3e50;
-            padding-left: 15px;
-        }
-        .projects .project-title {
-            font-size: 18px;
-            color: #2c3e50;
-            margin-bottom: 5px;
-        }
-        .projects .project-details {
-            font-size: 14px;
-            color: #555;
-            margin-bottom: 5px;
-        }
-        .projects .project-description {
-            margin-bottom: 10px;
-        }
-        .projects .visit-link a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        .projects .visit-link a:hover {
-            text-decoration: underline;
-        }
-        .experience-item {
-            margin-bottom: 30px;
-        }
-        .experience-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 10px;
-        }
-        .experience-header h3 {
-            margin: 0;
-            font-size: 20px;
-            color: #2c3e50;
-        }
-        .experience-header p {
-            margin: 0;
-            color: #555;
-        }
-        .experience-details {
-            text-align: right;
-            font-size: 16px;
-            color: #777;
-        }
-        .contact-info i {
-            font-size: 16px;
-            color: #2c3e50;
-        }
-        .sidebar .fa {
-            font-size: 20px;
-            color: #2c3e50;
-            margin-right: 10px;
-        }
-        .sidebar a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        .sidebar a:hover {
-            text-decoration: underline;
-        }
+        /* Include the updated CSS here */
     </style>
 </head>
 <body>
@@ -235,9 +72,11 @@
             <h3>Bachelor’s in Software Engineering</h3>
             <p>Gandaki College of Engineering and Science, Pokhara University</p>
             <p>2017 - 2024</p>
+        </div>
 
-            <h2>SKILLS</h2>
+        <div class="sidebar">
             <div class="skills-section">
+                <h2>SKILLS</h2>
                 <div class="skill">
                     <p><strong>Python</strong></p>
                     <div class="progress">
@@ -264,29 +103,33 @@
                 </div>
             </div>
 
-            <h2>PROJECTS</h2>
             <div class="projects">
+                <h2>PROJECTS</h2>
                 <ul>
                     <li>
-                        <div class="project-title">Project Management System</div>
-                        <div class="project-details">Technologies Used: Python, Django</div>
-                        <div class="project-description">A comprehensive system to manage projects, tasks, and team members with a user-friendly interface.</div>
-                        <div class="visit-link"><a href="https://github.com/yourusername/project-management-system" target="_blank">Visit Project</a></div>
+                        <div class="project-title">Wishster - Make a Wish</div>
+                        <div class="project-details">03/2024 - 06/2024 | Remote (Australia)</div>
+                        <div class="project-description">
+                            I was responsible for handling all the backend and system deployment roles for the Wishster freelance project.
+                        </div>
                     </li>
                     <li>
-                        <div class="project-title">Stock Market Analysis Platform</div>
-                        <div class="project-details">Technologies Used: Python, Flask</div>
-                        <div class="project-description">A platform for analyzing stock market trends and making informed investment decisions.</div>
-                        <div class="visit-link"><a href="https://github.com/yourusername/stock-market-analysis" target="_blank">Visit Project</a></div>
+                        <div class="project-title">Himali Green</div>
+                        <div class="project-details">03/2022 - 07/2022 | Remote</div>
+                        <div class="project-description">
+                            I handled the API development and deployment parts for this ecommerce-like web and mobile application.
+                            <a href="#">Visit Here</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="project-title">RentAssist</div>
+                        <div class="project-details">Final Year Project</div>
+                        <div class="project-description">
+                            A rent management system with OCR technology for electricity meter reading, including separate apps for owners and tenants.
+                        </div>
                     </li>
                 </ul>
             </div>
-        </div>
-
-        <div class="sidebar">
-            <h2>LINKS</h2>
-            <p><a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i> GitHub</a></p>
-            <p><a href="https://www.linkedin.com/in/yourusername/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></p>
         </div>
     </div>
 </body>
