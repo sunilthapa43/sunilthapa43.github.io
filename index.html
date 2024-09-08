@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sunil Thapa Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* Existing CSS */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -17,7 +17,7 @@
         .container {
             display: flex;
             justify-content: space-between;
-            gap: 20px; /* Adds space between the main content and sidebar */
+            gap: 20px;
             width: 90%;
             max-width: 1000px;
             margin: 40px auto;
@@ -41,6 +41,10 @@
             font-size: 16px;
             color: #777;
             margin-bottom: 30px;
+        }
+        .contact-info i {
+            margin-right: 8px;
+            color: #2c3e50;
         }
         h2 {
             font-size: 24px;
@@ -90,6 +94,69 @@
             border-radius: 5px;
             transition: width 0.5s;
         }
+        .projects ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .projects ul li {
+            margin-bottom: 20px;
+        }
+        .projects .project-title {
+            font-size: 18px;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        .projects .project-details {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 5px;
+        }
+        .projects .project-description {
+            margin-bottom: 10px;
+        }
+        .projects .visit-link a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .experience-item {
+            margin-bottom: 30px;
+        }
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+        .experience-header h3 {
+            margin: 0;
+            font-size: 20px;
+            color: #2c3e50;
+        }
+        .experience-header p {
+            margin: 0;
+            color: #555;
+        }
+        .experience-details {
+            text-align: right;
+            font-size: 16px;
+            color: #777;
+        }
+        .contact-info i {
+            font-size: 16px;
+            color: #2c3e50;
+        }
+        .sidebar .fa {
+            font-size: 20px;
+            color: #2c3e50;
+            margin-right: 10px;
+        }
+        .sidebar a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -97,8 +164,9 @@
         <div class="main-content">
             <h1>SUNIL THAPA</h1>
             <p class="contact-info">
-                Software Engineer<br>
-                +9779846214043 | tsunil359@gmail.com | Pokhara
+                <i class="fas fa-phone"></i> +9779846214043<br>
+                <i class="fas fa-envelope"></i> tsunil359@gmail.com<br>
+                <i class="fas fa-map-marker-alt"></i> Pokhara
             </p>
 
             <h2>SUMMARY</h2>
@@ -108,29 +176,47 @@
             </p>
 
             <h2>EXPERIENCE</h2>
-            <h3>Software Engineer, Ideapreneur Nepal | 10/2022 - 01/2024</h3>
-            <p>Kupondole, Lalitpur</p>
-            <ul>
-                <li>Developed and maintained backend systems and RESTful APIs.</li>
-                <li>Remodeled and optimized relational database systems.</li>
-                <li>Code optimization and reviews to ensure system efficiency.</li>
-                <li>Implemented scalable architecture patterns and introduced a CI/CD system for automated deployment.</li>
-                <li>Collaborated with designers and stakeholders to create user-friendly and visually appealing website designs.</li>
-                <li>Worked alongside finance and legal experts to gather requirements and integrate their ideas into the system.</li>
-                <li>Performed data analysis, visualizations, and computations using pandas.</li>
-                <li>Mentored interns and junior developers, guiding them through debugging and issue resolution.</li>
-                <li>Implemented new features, enhancements, and fixes to meet evolving platform needs.</li>
-            </ul>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3>Software Engineer, Ideapreneur Nepal</h3>
+                        <p>Kupondole, Lalitpur</p>
+                    </div>
+                    <div class="experience-details">
+                        <p>10/2022 - 01/2024</p>
+                    </div>
+                </div>
+                <ul>
+                    <li>Developed and maintained backend systems and RESTful APIs.</li>
+                    <li>Remodeled and optimized relational database systems.</li>
+                    <li>Code optimization and reviews to ensure system efficiency.</li>
+                    <li>Implemented scalable architecture patterns and introduced a CI/CD system for automated deployment.</li>
+                    <li>Collaborated with designers and stakeholders to create user-friendly and visually appealing website designs.</li>
+                    <li>Worked alongside finance and legal experts to gather requirements and integrate their ideas into the system.</li>
+                    <li>Performed data analysis, visualizations, and computations using pandas.</li>
+                    <li>Mentored interns and junior developers, guiding them through debugging and issue resolution.</li>
+                    <li>Implemented new features, enhancements, and fixes to meet evolving platform needs.</li>
+                </ul>
+            </div>
 
-            <h3>Backend Developer, Himalaya Green | 03/2022 - 07/2022</h3>
-            <p>Remote</p>
-            <ul>
-                <li>Developed APIs and backend systems for sustainability projects.</li>
-                <li>Participated in code reviews and debugging.</li>
-                <li>Gained valuable insights into real-world development projects and work culture.</li>
-                <li>Learned the software development essentials like architecture, version control systems, relational databases, deployment and servers</li>
-                <li>Gained valuable insights into real-world development projects and work culture, further enhancing technical skills and industry knowledge</li>
-            </ul>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3>Backend Developer, Himalaya Green</h3>
+                        <p>Remote</p>
+                    </div>
+                    <div class="experience-details">
+                        <p>03/2022 - 07/2022</p>
+                    </div>
+                </div>
+                <ul>
+                    <li>Developed APIs and backend systems for sustainability projects.</li>
+                    <li>Participated in code reviews and debugging.</li>
+                    <li>Gained valuable insights into real-world development projects and work culture.</li>
+                    <li>Learned the software development essentials like architecture, version control systems, relational databases, deployment and servers</li>
+                    <li>Gained valuable insights into real-world development projects and work culture, further enhancing technical skills and industry knowledge</li>
+                </ul>
+            </div>
 
             <h2>EDUCATION</h2>
             <h3>BE in Software Engineering | Gandaki College Of Engineering and Science | 11/2017 - 08/2022</h3>
@@ -148,48 +234,55 @@
             <div class="skills-section">
                 <h2>SKILLS</h2>
                 <div class="progress">
-                    <div class="progress-bar" style="width: 80%;">REST API Development</div>
+                    <div class="progress-bar" style="width: 90%;">REST API Development</div>
                 </div>
                 <div class="progress">
-                    <div class="progress-bar" style="width: 75%;">Relational Databases</div>
+                    <div class="progress-bar" style="width: 85%;">Relational Databases</div>
                 </div>
                 <div class="progress">
-                    <div class="progress-bar" style="width: 70%;">Object-Oriented Programming</div>
+                    <div class="progress-bar" style="width: 80%;">Object-Oriented Programming</div>
                 </div>
                 <div class="progress">
-                    <div class="progress-bar" style="width: 65%;">System Deployment and Maintenance</div>
+                    <div class="progress-bar" style="width: 75%;">System Deployment and Maintenance</div>
                 </div>
             </div>
         </div>
 
         <div class="sidebar">
             <h2>FIND ME</h2>
-            <ul>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">Your LinkedIn Profile</a></li>
-                <li>GitHub: <a href="https://github.com/yourusername" target="_blank">Your GitHub Profile</a></li>
-                <li>Portfolio: <a href="https://yourportfolio.com" target="_blank">Your Portfolio</a></li>
-            </ul>
+            <p>
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a><br>
+                <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </p>
 
             <h2>PROJECTS</h2>
-            <ul>
-                <li>Project 1: Description of project 1.</li>
-                <li>Project 2: Description of project 2.</li>
-                <li>Project 3: Description of project 3.</li>
+            <ul class="projects">
+                <li>
+                    <div class="project-title">Wishster - Make a wish</div>
+                    <div class="project-details">03/2024 - 06/2024 | Remote (Australia)</div>
+                    <div class="project-description">
+                        Backend and System Deployment<br>
+                        I was responsible for handling all the backend and system deployment roles for the Wishster freelance project.
+                    </div>
+                </li>
+                <li>
+                    <div class="project-title">Himali Green</div>
+                    <div class="project-details">03/2022 - 07/2022 | Remote</div>
+                    <div class="project-description">
+                        Backend and API Development<br>
+                        I handled the API development and deployment parts for this ecommerce like web and mobile application.<br>
+                        <span class="visit-link"><a href="https://www.himalayagreen.com" target="_blank">Visit Website</a></span>
+                    </div>
+                </li>
+                <li>
+                    <div class="project-title">RentAssist</div>
+                    <div class="project-details">Final Year Project</div>
+                    <div class="project-description">
+                        System, Backend, DevOps<br>
+                        Rent management system with OCR technology for electricity meter reading, which includes separate apps for owners and tenants.
+                    </div>
+                </li>
             </ul>
-
-            <h2>SKILLS</h2>
-            <div class="progress">
-                <div class="progress-bar" style="width: 80%;">REST API Development</div>
-            </div>
-            <div class="progress">
-                <div class="progress-bar" style="width: 75%;">Relational Databases</div>
-            </div>
-            <div class="progress">
-                <div class="progress-bar" style="width: 70%;">Object-Oriented Programming</div>
-            </div>
-            <div class="progress">
-                <div class="progress-bar" style="width: 65%;">System Deployment and Maintenance</div>
-            </div>
         </div>
     </div>
 </body>
